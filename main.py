@@ -20,13 +20,14 @@ def train_naive_bayes(data):
     likelihoods = {}
     for label in class_priors:
         class_data = X[y == label]
+        print(f"\n{label} Class Data:\n{class_data}\n")
         likelihoods[label] = {}
         for column in X.columns:
             mean = class_data[column].mean()
             std = class_data[column].std()
             likelihoods[label][column] = {'mean': mean, 'std': std}
         
-        print(f"\nLikelihoods for class '{label}': {likelihoods[label]}")  # Debugging output
+        print(f"\nLikelihoods for class '{label}':\n{likelihoods[label]}")  # Debugging output
 
     return class_priors, likelihoods
 
@@ -48,6 +49,7 @@ def predict_naive_bayes(class_priors, likelihoods, test_data):
         
         print(f"\nClass probabilities for row {row.name}: {class_probs}")  # Debugging output
         predicted_label = max(class_probs, key=class_probs.get)
+        print(f"Max Value: {predicted_label}")
         predictions.append(predicted_label)
     
     return predictions
