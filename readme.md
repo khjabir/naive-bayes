@@ -57,7 +57,7 @@ Each CSV file should have the following format:
 After installing the required dependencies and preparing the dataset, you can run the program using the following command:
 
 ```bash
-python naive_bayes_classifier.py
+python main.py
 ```
 
 The program will:
@@ -93,13 +93,13 @@ Accuracy: 95.0%
 
 ```
 .
-├── naive_bayes_classifier.py    # Main program file
+├── main.py    # Main program file
 ├── iris_train.csv              # Training dataset
 ├── iris_test.csv               # Test dataset
 └── README.md                   # This README file
 ```
 
-### `naive_bayes_classifier.py`
+### `main.py`
 
 This is the main program file where the Naive Bayes classifier is implemented. It contains functions for:
 
