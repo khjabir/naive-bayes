@@ -9,7 +9,6 @@ This project implements a **Gaussian Naive Bayes** classifier from scratch to cl
 - [Usage](#usage)
 - [File Structure](#file-structure)
 - [How the Code Works](#how-the-code-works)
-- [License](#license)
 
 ## Project Description
 
@@ -120,10 +119,6 @@ These CSV files contain the training and testing datasets, respectively. The for
    - **Likelihoods**: The mean and standard deviation of each feature for each class.
 3. **Making Predictions**: The `predict_naive_bayes()` function applies Bayes' theorem to compute the probability of each class given the features in the test data. It then selects the class with the highest probability as the predicted class.
 4. **Calculating Accuracy**: The `calculate_accuracy()` function compares the predicted labels with the true labels and computes the accuracy of the model.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
