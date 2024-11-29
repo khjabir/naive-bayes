@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 from math import log, sqrt, pi
-from sklearn.model_selection import train_test_split
 
 # Function to load data
 def load_data(file_path):
